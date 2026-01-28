@@ -1,0 +1,36 @@
+{
+    "default": {
+        "product_name": [
+            ".product-title",
+            ".product-name",
+            "h1.title",
+            "h1.product_title",
+            ".entry-title"
+        ],
+        "price": [
+            ".price",
+            ".product-price",
+            ".current-price",
+            ".amount",
+            ".offer-price"
+        ],
+        "category": [
+            ".breadcrumb",
+            ".category",
+            ".product-category",
+            ".posted_in"
+        ],
+        "sku": [
+            ".sku",
+            ".product-sku",
+            ".product-code",
+            "span.sku"
+        ],
+        "stock": [
+            ".stock-status",
+            ".availability",
+            ".inventory",
+            ".stock"
+        ]
+    }
+}

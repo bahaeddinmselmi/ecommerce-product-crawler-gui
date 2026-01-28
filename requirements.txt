@@ -1,4 +1,7 @@
+customtkinter
 requests
 beautifulsoup4
-tk
 lxml
+fake-useragent
+openpyxl
+pandas
