@@ -1,58 +1,58 @@
-# product-web-crawler
-A Python-based web crawler to extract product details (name, price, category, SKU, stock) from online stores. Features adjustable crawling depth, data saved in CSV, and a Tkinter GUI to control and view the crawl. Uses requests, BeautifulSoup, and csv for scraping and output generation.
-# Product Web Crawler
+# 🛒 E-Commerce Product Crawler (GUI)
 
-A Python-based web crawler designed to extract product details like name, price, category, SKU, and stock status from websites. It supports crawling websites recursively up to a specified depth and stores the extracted data in a CSV file.
+> A user-friendly, Python-based desktop tool to recursively scrape product data (Price, SKU, Stock) from online stores.
 
-## Features
+[![Python](https://img.shields.io/badge/Python-3.x-blue)](https://python.org)
+[![GUI](https://img.shields.io/badge/Interface-Tkinter-green)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-- Extracts product information: name, price, category, SKU, and stock status.
-- Customizable selectors for various product fields.
-- Recursively crawls web pages up to a user-defined depth.
-- Saves extracted product details to a CSV file.
-- User-friendly GUI using Tkinter for ease of use.
+## 📖 Overview
 
-## Installation
+**E-Commerce Product Crawler** is a desktop application designed for non-technical users to extract structured data from e-commerce websites. Unlike CLI scripts, it features a visual **Graphical User Interface (GUI)** built with Tkinter.
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/product-web-crawler.git
-Navigate into the project directory:
+It allows you to:
+*   **Recursively Crawl**: Navigate pagination and category links up to a custom depth.
+*   **Extract Fields**: Automatically captures Name, Price, Category, SKU, and Stock Status.
+*   **Export Data**: Saves all scraped results directly to CSV.
 
-bash
-Copy code
-cd product-web-crawler
-Install the necessary dependencies:
+## 🚀 Features
+*   **Visual Control**: Start, Stop, and Monitor progress via a dedicated dashboard.
+*   **Custom Selectors**: Configure CSS selectors to match any target website layout.
+*   **Depth Control**: Set how many levels deep the crawler should go.
+*   **Request Safety**: Configurable delays and timeouts to avoid getting blocked.
 
-bash
-Copy code
-pip install -r requirements.txt
-Usage
-Run the Python script:
+## 🛠 Installation
 
-bash
-Copy code
-python crawler_gui.py
-In the GUI, input the starting URL and set the maximum depth for crawling.
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/bahaeddinmselmi/ecommerce-product-crawler-gui.git
+    cd ecommerce-product-crawler-gui
+    ```
 
-Click "Start" to begin crawling and "Stop" to halt the process.
+2.  Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-The extracted data will be saved in a CSV file in the output directory.
+## 🕹 Usage
 
-Configuration
-Config.py contains the default settings for the crawler, including:
-delay: Time delay between requests.
-timeout: Timeout for web requests.
-selectors: Custom CSS selectors to identify product details.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+1.  Run the application:
+    ```bash
+    python product-web-crawler.py
+    ```
 
-Contributions
-Feel free to fork this repository, submit issues, or create pull requests. Contributions are welcome!
+2.  **In the GUI window**:
+    *   **Start URL**: Enter the shop page URL (e.g., `https://myshop.com/products`).
+    *   **Max Depth**: Set how many clicks deep to follow links (default: 2).
+    *   **Actions**: Click `Start Crawling`.
 
-Acknowledgements
-BeautifulSoup for web scraping.
-Requests for making HTTP requests.
-Tkinter for building the GUI.
-Contact
-For any questions or suggestions, feel free to open an issue on GitHub or contact me at [bahaeddinmselmi1@gmail.com].
+3.  **Output**:
+    Data is saved to `output_products.csv` in the same directory.
+
+## ⚙️ Configuration
+You can tweak the default scraping logic in the source code or via the UI parameters.
+*   `delay`: Seconds to wait between requests (politeness).
+*   `selectors`: Dictionary of CSS selectors for data points.
+
+## 📄 License
+MIT
